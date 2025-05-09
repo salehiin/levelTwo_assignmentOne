@@ -1,6 +1,6 @@
 
 
-# ☕ What are some differences between interfaces and types in TypeScript?
+# ☕ 1. What are some differences between interfaces and types in TypeScript?
 
 # In Typescript we use 2 types of operator to declare type. these are: type operator and intrface operator.
 
@@ -14,7 +14,7 @@
 6. Type alias is more clean than interface when using with array and funtion, so it is recommended to use type alias with array and function.
 
 
-# ☕ What is the use of the keyof keyword in TypeScript? Provide an example.
+# ☕ 2. What is the use of the keyof keyword in TypeScript? Provide an example.
 
 # typeof operator inherits keys of a existing type and creates a new union types of string literal. example-
 
@@ -38,11 +38,11 @@ const person2 : Owner2 = '';
 
 
 
-# ☕ Explain the difference between any, unknown, and never types in TypeScript.
+# ☕ 3. Explain the difference between any, unknown, and never types in TypeScript.
 
-# any type- when we don't declare explicitly the type typescript compiler infers that it will be any type. any type shouldn't use.
+# any types- when we don't declare explicitly the type typescript compiler infers that it will be any type. any type shouldn't use.
 
-# Example of a unknown types:
+# Example of a any types:
 let d; then we can assign any type of data in d. like: d = "string", d = number, d = null etc.
 
 # Unkown types - When define it is not sure what will be the type but in runtime we can return it's type. In runtime we will check it's type by using typeof operator.
@@ -67,11 +67,11 @@ let d; then we can assign any type of data in d. like: d = "string", d = number,
     getSpeedInMeterPerSecond(`1000 kmh^-1`)
 
 
-# never types - Function which returns nothing just throw an error it's type will be never type
+# never types - Function which returns nothing just throw an error it's type will be never type.
 
 # Example of a never types:
     const throwError = (msg: string): never => {
         throw new Error(msg);
     };
     
-    throwError('Muskil se error');
+    throwError('Error happens');
